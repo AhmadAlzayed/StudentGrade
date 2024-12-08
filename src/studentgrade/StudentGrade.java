@@ -20,13 +20,18 @@ public class StudentGrade {
      * @return The grade based on the mark entered by user
      */
     public static String getGrade(int mark) {
-        if (mark >= 90 && mark <= 100)
-            return "A";
-        else if (mark >= 80 && mark < 90)
-            return "B";
-        else if (mark >= 70 && mark < 80)
-            return "C";
-        else 
-            return "F";
+        if(mark >= 0){
+            if (mark >= 90 && mark <= 100)
+                return "A";
+            else if (mark >= 80 && mark < 90)
+                return "B";
+            else if (mark >= 70 && mark < 80)
+                return "C";
+            else 
+                return "F";
+        }else{
+            System.out.println("The Accept Positive Values.");
+            return null;
+        }
     }
 }
