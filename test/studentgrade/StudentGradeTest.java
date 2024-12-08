@@ -24,6 +24,14 @@ public class StudentGradeTest extends TestCase {
         String result = StudentGrade.getGrade(mark);
         assertEquals(expResult, result);
     }
+
+     public void testGetGrade75() {
+        System.out.println("getGrade 75");
+        int mark = 75;
+        String expResult = "C";
+        String result = StudentGrade.getGrade(mark);
+        assertEquals(expResult, result);
+    }
     
     public void testGetGrade75() {
         System.out.println("getGrade 85");
